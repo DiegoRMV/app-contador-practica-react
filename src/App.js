@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import freeCodeCampLogo from "./assets/images/freecodecamp-logo.png";
 import Button from "./components/Button";
 import Counter from "./components/Counter";
 
@@ -16,13 +15,6 @@ function App() {
 
 	return (
 		<div className="App">
-			<div className="freecodecamp-logo-container">
-				<img
-					className="freecodecamp-logo"
-					src={freeCodeCampLogo}
-					alt="logo de freeCodeCamp"
-				/>
-			</div>
 			<div className="container-main">
 				<Counter clics={clics}/>
 				<Button text="Clic" isButtonClic={true} handleClick={handleClick} />
